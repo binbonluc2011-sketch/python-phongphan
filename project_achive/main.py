@@ -1,16 +1,17 @@
 import tkinter as tk
 from app_frontend import intro
-from app_backend import menu, phuong_trinh
+from app_backend import menu
 
+# Khởi tạo cửa sổ chính
 root = tk.Tk()
 root.state("zoomed")
 root.title("Project Achive - developed by Phong Phan - Early access")
 
+# Hiển thị phần giới thiệu
 intro.intro(root)
-a = menu.menu(root)
 
-if a == "giải phương trình":
-    phuong_trinh.pt(root)
-elif a == "giải đồ thị":
-    pass
+# Hiển thị menu và xử lý lựa chọn
+menu.menu(root)
+
+# Chạy vòng lặp chính của ứng dụng
 tk.mainloop()
