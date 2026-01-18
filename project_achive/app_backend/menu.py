@@ -1,6 +1,5 @@
 import tkinter as tk
-from app_backend.phuong_trinh_v1 import phuong_trinh
-from app_backend.do_thi_v1 import do_thi
+from app_backend.phuong_trinh import he_phuong_trinh
 
 def menu(root):
     # Tạo frame chính
@@ -15,7 +14,7 @@ def menu(root):
     select_option = tk.StringVar()
     select_option.set("giải phương trình")
 
-    option = ["giải phương trình", "giải đồ thị"]
+    option = ["phương trình bậc nhất một ẩn", "phương trình bậc hai một ẩn", "hệ phương trình bậc nhất hai ẩn", "đồ thị hàm số y = ax + b (a khác 0)", "đồ thị parabol y = x² (a khác 0)"]
     option_menu = tk.OptionMenu(main, select_option, *option)
     option_menu.place(relx=0.03, rely=0.6)
 
@@ -30,10 +29,10 @@ def menu(root):
             widget.destroy()
 
         selected = select_option.get()
-        if selected == "giải phương trình":
-            phuong_trinh(content_frame)  # Gọi hàm từ file phuong_trinh_v1.py
+        if selected == "hệ phương trình bậc nhất hai ẩn":
+            he_phuong_trinh(content_frame)  # Gọi hàm từ file phuong_trinh_v1.py
         elif selected == "giải đồ thị":
-            do_thi(content_frame)  # Gọi hàm từ file do_thi_v1.py
+            pass # Gọi hàm từ file do_thi_v1.py
 
         content_frame.pack(side="top", fill="both", expand=True)
 
