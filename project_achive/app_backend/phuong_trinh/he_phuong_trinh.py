@@ -36,12 +36,15 @@ def he_PT(parent):
 
     #tạo awnser screen
     awnser_screen = tk.Frame(parent, width= parent.winfo_screenwidth()/2, bg="lightblue")
-    awnser_screen.pack(side="left", fill="y")
+    awnser_screen.pack(side="right", fill="y")
     awnser_title = tk.Label(awnser_screen, text="AWNSER_SCREEN", font=("Arial", 16))
     awnser_title.place(relx=0.5)
     #tạo hàm giải toán
     def button_submit():
         try:
+            for wiget in awnser_screen:
+                wiget.destroy()
+
             pt1 = ptrinh1_entry.get()
             pt2 = ptrinh2_entry.get()
             

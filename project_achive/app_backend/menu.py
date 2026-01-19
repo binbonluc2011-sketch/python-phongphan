@@ -1,5 +1,5 @@
 import tkinter as tk
-from app_backend.phuong_trinh import he_phuong_trinh
+from app_backend.phuong_trinh.he_phuong_trinh import he_PT
 
 def menu(root):
     # Tạo frame chính
@@ -30,7 +30,7 @@ def menu(root):
 
         selected = select_option.get()
         if selected == "hệ phương trình bậc nhất hai ẩn":
-            he_phuong_trinh(content_frame)  # Gọi hàm từ file phuong_trinh_v1.py
+            he_PT(content_frame)  # Gọi hàm từ file phuong_trinh_v1.py
         elif selected == "giải đồ thị":
             pass # Gọi hàm từ file do_thi_v1.py
 
