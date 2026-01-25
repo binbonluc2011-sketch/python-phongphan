@@ -1,5 +1,8 @@
 import tkinter as tk
+
+#import các def vô cho hắn chạy
 from app_backend.phuong_trinh.he_phuong_trinh import he_PT
+from app_backend.phuong_trinh.phuong_trinh_bac_hai import PT_bac_hai
 
 def menu(root):
     # Tạo frame chính
@@ -30,10 +33,11 @@ def menu(root):
 
         selected = select_option.get()
         if selected == "hệ phương trình bậc nhất hai ẩn":
-            he_PT(content_frame)  # Gọi hàm từ file phuong_trinh_v1.py
-        elif selected == "giải đồ thị":
-            pass # Gọi hàm từ file do_thi_v1.py
-
+            he_PT(content_frame)
+        elif selected == "phương trình bậc hai một ẩn":
+            PT_bac_hai(content_frame)
+        elif selected == "phương trình bậc nhất một ẩn":
+            pass
         content_frame.pack(side="top", fill="both", expand=True)
 
     # Liên kết sự kiện thay đổi tùy chọn

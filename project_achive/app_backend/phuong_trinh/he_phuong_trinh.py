@@ -10,22 +10,22 @@ def he_PT(parent):
     he_phuong_trinh.pack(side="left", fill="y")
     he_phuong_trinh.pack_propagate(False) #ngăn không cho wiget tự động co lại
     #tạo title
-    top_title = tk.Label(he_phuong_trinh, text="HỆ PHƯƠNG TRÌNH", font=("Arial", 16))
+    top_title = tk.Label(he_phuong_trinh, text="HỆ PHƯƠNG TRÌNH", font=("Arial", 16), bg="white")
     top_title.place(relx=0.5)
     #tạo title cho phương trình 1:
-    ptrinh1 = tk.Label(he_phuong_trinh, text="phương trình 1: ax + by = c hoặc ax - by = c", font=("Arial", 13))
+    ptrinh1 = tk.Label(he_phuong_trinh, text="phương trình 1: ax + by = c hoặc ax - by = c", font=("Arial", 13), bg="white")
     ptrinh1.place(relx=0.1, rely=0.1)
     #tạo label cho nhập phương trình 1:
-    ptrinh1_label = tk.Label(he_phuong_trinh, text="nhập phương trình:", font=("Arial", 11))
+    ptrinh1_label = tk.Label(he_phuong_trinh, text="nhập phương trình:", font=("Arial", 11), bg="white")
     ptrinh1_label.place(relx=0.1, rely=0.15)
     #tạo entry phương trình 1:
     ptrinh1_entry = tk.Entry(he_phuong_trinh, width=30)
     ptrinh1_entry.place(relx=0.31, rely=0.15)    
     #tạo title cho phương trình 2
-    ptrinh2 = tk.Label(he_phuong_trinh, text="phương trình 2: a'x + b'y = c hoặc a'x - b'y = c'", font=("Arial", 13))
+    ptrinh2 = tk.Label(he_phuong_trinh, text="phương trình 2: a'x + b'y = c hoặc a'x - b'y = c'", font=("Arial", 13), bg="white")
     ptrinh2.place(relx=0.1, rely=0.2)
     #tạo label cho phương trình 2:
-    ptrinh2_label = tk.Label(he_phuong_trinh, text="nhập phương trình:", font=("Arial", 11))
+    ptrinh2_label = tk.Label(he_phuong_trinh, text="nhập phương trình:", font=("Arial", 11), bg="white")
     ptrinh2_label.place(relx=0.1, rely=0.25)
     #tạo entry cho phương trình 2:
     ptrinh2_entry = tk.Entry(he_phuong_trinh, width=30)
@@ -37,7 +37,7 @@ def he_PT(parent):
     #tạo awnser screen
     awnser_screen = tk.Frame(parent, width= parent.winfo_screenwidth()/2, bg="white")
     awnser_screen.pack(side="right", fill="y")
-    awnser_title = tk.Label(awnser_screen, text="AWNSER_SCREEN", font=("Arial", 16))
+    awnser_title = tk.Label(awnser_screen, text="AWNSER_SCREEN", font=("Arial", 16), bg="white")
     awnser_title.place(relx=0.5)
     #tạo hàm giải toán
     def button_submit():
