@@ -35,7 +35,7 @@ def he_PT(parent):
     submit_button.place(relx=0.5, rely=0.3)
 
     #tạo awnser screen
-    awnser_screen = tk.Frame(parent, width= parent.winfo_screenwidth()/2, bg="lightblue")
+    awnser_screen = tk.Frame(parent, width= parent.winfo_screenwidth()/2, bg="white")
     awnser_screen.pack(side="right", fill="y")
     awnser_title = tk.Label(awnser_screen, text="AWNSER_SCREEN", font=("Arial", 16))
     awnser_title.place(relx=0.5)
