@@ -24,10 +24,10 @@ def PT_bac_hai(parent):
     button.place(relx=0.4, rely=0.2)
 
     #tạo màn hình trả về
-    awnser_frame = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="lightblue")
+    awnser_frame = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="white")
     awnser_frame.pack(side="left", fill="y")
-    awnser_label = tk.Label(parent, text="AWNSER SCREEN", font=("Arial", 16), bg="white")
-    awnser_label.pack(side="top")
+    awnser_label = tk.Label(awnser_frame, text="AWNSER SCREEN", font=("Arial", 16), bg="white")
+    awnser_label.place(relx=0.5)
 
     #tạo hàm button trả về
     def button_clicked():

@@ -3,6 +3,7 @@ import tkinter as tk
 #import các def vô cho hắn chạy
 from app_backend.phuong_trinh.he_phuong_trinh import he_PT
 from app_backend.phuong_trinh.phuong_trinh_bac_hai import PT_bac_hai
+from app_backend.phuong_trinh.phuong_trinh_bac_nhat import PT_bac_nhat
 
 def menu(root):
     # Tạo frame chính
@@ -37,7 +38,7 @@ def menu(root):
         elif selected == "phương trình bậc hai một ẩn":
             PT_bac_hai(content_frame)
         elif selected == "phương trình bậc nhất một ẩn":
-            pass
+            PT_bac_nhat(content_frame)
         content_frame.pack(side="top", fill="both", expand=True)
 
     # Liên kết sự kiện thay đổi tùy chọn
