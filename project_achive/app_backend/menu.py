@@ -5,6 +5,7 @@ from app_backend.phuong_trinh.he_phuong_trinh import he_PT
 from app_backend.phuong_trinh.phuong_trinh_bac_hai import PT_bac_hai
 from app_backend.phuong_trinh.phuong_trinh_bac_nhat import PT_bac_nhat
 from app_backend.do_thi.do_thi_ham_so import do_thi
+from app_backend.do_thi.do_thi_parabol import parabol
 def menu(root):
     # Tạo frame chính
     main = tk.Frame(root, height=100, bg="white")
@@ -41,6 +42,8 @@ def menu(root):
             PT_bac_nhat(content_frame)
         elif selected == "đồ thị hàm số y = ax + b (a khác 0)":
             do_thi(content_frame)
+        elif selected == "đồ thị parabol y = x² (a khác 0)":
+            parabol(content_frame)
         content_frame.pack(side="top", fill="both", expand=True)
 
     # Liên kết sự kiện thay đổi tùy chọn

@@ -26,7 +26,7 @@ def PT_bac_nhat(parent):
     button = tk.Button(pt_bac_nhat, text="SUBMIT", font=("Arial", 13), bg="white", command=lambda: button_cliked())
     button.place(relx=0.4, rely=0.2)
     #tạo màn hình trả về
-    awnser_screen = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="lightblue")
+    awnser_screen = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="white")
     awnser_screen.pack(side="right", fill="both", expand=True)
     awnser_screen.pack_propagate(False)
     awnser_title = tk.Label(awnser_screen, text="AWNSER SCREEN", font=("Arial", 16), bg="white")

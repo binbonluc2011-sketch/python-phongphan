@@ -2,7 +2,7 @@ import tkinter as tk
 
 def parabol(parent):
      #tạo frame parabol
-     dt_parabol = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="lightblue")
+     dt_parabol = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="white")
      dt_parabol.pack(side="left", fill="y")
      dt_parabol.pack_propagate(False)
      #tạo title
@@ -30,21 +30,20 @@ def parabol(parent):
      def button_clicked():
           try:
                a = entry_a.get()
-               y1 = -3*a
+               y1 = -2 * a
+               y2 = -1 * a
+               y3 = 0
                p1 = ()
-               p1 += (-2,)
+               p1 += (-2, y1,)
                p2 = ()
-               p2 += (-1,)
-               p3 = ()
-               p3 += (0,)
-               p4 = ()
-               p4 += (1,)
-               p5 = ()
-               p5 += (2,)
+               p2 += (-1, y2,)
+               p3 = (0,0)
                if a == 0:
                     pt_error = tk.Label(awnser_screen, text="Phương trình lỗi, a phải khác 0z", font=("Arial", 11), bg="white")
                     pt_error.place(relx=0.1, rely=0.1)
                else:
-                    
-
+                    ket_qua = tk.Label(awnser_screen, text=f"các điểm đẻ vẽ parabol lần lượt là: ({p1}); ({p2}); ({p3}); ({p2}); ({p1})")
+                    ket_qua.place(relx=0.1, rely=0.1)
           except:
+               syntax_error = tk.Label(awnser_screen, text="SYNTAX ERROR", font=("Arial", 11), bg="white")
+               syntax_error.place(relx=0.1, rely=0.1)

@@ -27,7 +27,7 @@ def do_thi(parent):
     button = tk.Button(dothi_screen, text="SUBMIT", font=("Arial", 11), bg="white", command=lambda: button_clicked())
     button.place(relx=0.25, rely=0.3)
     #tạo awnser screen
-    awnser_screen = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="lightblue")
+    awnser_screen = tk.Frame(parent, width=parent.winfo_screenwidth()/2, bg="white")
     awnser_screen.pack(side="right", fill="y")
     awnser_screen.pack_propagate(False)
     awnser_title = tk.Label(awnser_screen, text="AWNSER SCREEN", font=("Arial", 16), bg="white")
