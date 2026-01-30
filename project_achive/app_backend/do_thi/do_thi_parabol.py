@@ -29,15 +29,22 @@ def parabol(parent):
      #tạo hàm def button clicked
      def button_clicked():
           try:
+               a = entry_a.get()
+               y1 = -3*a
                p1 = ()
                p1 += (-2,)
                p2 = ()
+               p2 += (-1,)
                p3 = ()
+               p3 += (0,)
                p4 = ()
+               p4 += (1,)
                p5 = ()
-               if entry_a.get() == 0:
-                    pt_error = tk.Label(awnser_screen, text="Phương trình lỗi", font=("Arial", 11), bg="white")
+               p5 += (2,)
+               if a == 0:
+                    pt_error = tk.Label(awnser_screen, text="Phương trình lỗi, a phải khác 0z", font=("Arial", 11), bg="white")
                     pt_error.place(relx=0.1, rely=0.1)
                else:
+                    
 
           except:
